@@ -1,0 +1,1 @@
+<img src="https://www.smashingmagazine.com/wp-content/uploads/2014/04/404-opt.png">

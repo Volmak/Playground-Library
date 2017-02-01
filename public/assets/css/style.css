@@ -1,0 +1,246 @@
+@CHARSET "UTF-8";
+
+/*
+	GENERAL
+*/
+
+.hidden {
+	display: none;
+}
+
+#error {
+	color:red;
+}
+
+button {
+	background-color:YellowGreen ;
+	border-width:0px;
+	border-radius:0.2em;
+	padding: 0.3em 0.5em;
+	box-sizing: border-box;
+	display:inline-block;
+	width: 8em;
+	color:white;
+	cursor: pointer;
+	
+	text-align: justify;
+	height: 2em;
+	line-height: 1.3em;
+}
+
+button:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+
+body{
+	background-image: url("../images/background.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+	background-position: center;
+	background-color: LightGray;
+    background-attachment: fixed;
+}
+
+html, body{
+	height: 100vh;
+}
+
+#container{
+	background-color: white;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	max-width: 600px;
+}
+
+#inner_container{
+	padding: 2em 3em;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	position:relative;
+}
+
+#inner_container::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+
+/*
+	HEADER
+*/
+
+.organization{
+	width:49.5%;
+	display: inline-block;
+    vertical-align:top;
+}
+
+.organization .organization_logo{
+	width: 3.6em;
+	height: 3.6em;
+}
+
+.organization_logo{
+	background-color: black;
+	border-radius: 10%;
+}
+
+.organization_name{
+	display: inline-block;
+	font-size: 1.8em;
+	position: absolute;
+	margin-left: 0.5em;
+}
+
+.organization_name span{
+	width:100%;
+	display:inline-block;
+}
+
+.btns{
+	display:inline-block;
+    vertical-align:top;
+    box-sizing: border-box;
+    width:49.5%;
+    margin-top: 0.3em;
+    padding-left: 1em;
+   	text-align: justify;
+	height: 2em;
+	line-height: 1.3em;
+}
+
+.btns:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+
+.fa-book{
+	color:black;
+}
+
+
+/*
+	CONTENT
+*/
+
+#content {
+	margin-top: 1em;
+	width:100%;
+	text-align: center;
+}
+
+#content input:not(#file), #content select, #content textarea{
+	width:100%;
+	box-sizing:border-box;
+	margin: 0.3em 0;
+	background-color: LightGray;
+}
+
+.col{
+	display: inline-block;
+	width: 48%;
+	overflow:hidden;
+}
+
+.left{
+	float: left;
+	clear: left;
+}
+
+.right{
+	float: right;
+	clear: right;
+}
+
+form > div{
+	margin-bottom: 0.8em;
+}
+
+form .col{
+/* 	height:4em; */
+}
+
+form .resume{
+	width:100%;
+	height:95%;
+	box-sizing:border-box;
+}
+
+.submit{
+	text-align: initial;
+}
+
+.fa-picture-o{
+	color:YellowGreen;
+	font-size:1.6em !important;
+}
+
+.joke{
+	text-align: center;
+}
+
+
+.book{
+	margin: 2em 0 1em 0 ;
+}
+
+.book img {
+	height: 15em;
+}
+
+.book .half{
+	height: 16em;
+}
+
+.book p, .book span {
+	margin-top: 0.3em;
+   	text-align: justify;
+	word-wrap:break-word;
+}
+
+.book .title{
+	font-weight:bold;
+}
+
+.book .big_info{
+	font-size: 1.5em;
+}
+
+.book .small_info {
+	font-size: 1.2em;
+}
+
+.inlbl {
+	display: inline;
+	float:left;
+}
+
+.pages {
+   	text-align: center;
+}
+
+.pages li {
+	display: inline-block;
+	width: 5%;
+}
+
+.pages .active{
+	cursor:default;
+}
+
+.pages li:not(.active):hover{
+	color: black;
+}
+
+.pages li:not(.active) {
+	cursor: pointer;
+	color: YellowGreen;
+}
